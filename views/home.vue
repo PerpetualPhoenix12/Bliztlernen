@@ -8,7 +8,16 @@
           </v-layout>
         </v-col>
         <v-col> 
-          <Dashboard />
+          <v-row>
+            <Dashboard />
+          </v-row>
+          <v-row class="ma-12">
+            <v-card width="35%" flat>
+              <v-row justify="center" class="ma-12">
+                <span class="welcome">Welcome!</span>
+              </v-row>
+            </v-card>
+          </v-row>
         </v-col>
       </v-row>
   </div>
@@ -29,5 +38,11 @@ export default {
 </script>
 
 <style>
+
+.welcome {
+  font-size: 30px;
+  color:  #455358;
+  font-weight: 600;
+}
 
 </style>

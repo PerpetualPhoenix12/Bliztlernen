@@ -16,7 +16,7 @@
               <v-card width="30%" flat>
                 <v-card-title>
                   <v-icon color="black" left>mdi-folder</v-icon>
-                  Folder
+                  Foreign Policy Aims
                 </v-card-title>
               </v-card>
             </v-col>
