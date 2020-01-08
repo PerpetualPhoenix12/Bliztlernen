@@ -34,5 +34,11 @@ export default {
   build: {
     extend (config, ctx) {
     }
+  },
+  generate: {
+    dir: 'my-dist'
+  },
+  build:{
+    publicPath: '/public/'
   }
 }
