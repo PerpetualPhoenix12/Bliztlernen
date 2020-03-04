@@ -14,6 +14,13 @@
                   :rules="rules.required" 
                   outlined></v-text-field>
 
+                  <v-text-field label="Avatar" 
+                  color="black" 
+                  class="user-txt" 
+                  v-model="user.avatar"
+                  :rules="rules.required" 
+                  outlined></v-text-field>
+
                   <v-text-field label="Username" 
                   color="black" 
                   class="user-txt" 
@@ -69,7 +76,8 @@ export default {
       user: {
         email: '',
         password: '',
-        username: ''
+        username: '',
+        avatar: ''
       },
       rules: {
           required: [ v => !!v || 'Field required' ]
@@ -90,7 +98,7 @@ export default {
         .then(result => {
           result.user.updateProfile({
             displayName: this.user.username,
-            photoURL: 'https://cdn.britannica.com/58/129958-050-C3FE2DD2/Adolf-Hitler-1933.jpg'
+            photoURL: this.user.avatar
           })
           .catch(err => {
             console.log("Signup error");

@@ -18,8 +18,9 @@
                 <template v-slot:activator="{ on }">
                     <span v-on="on" class="white--text user_dropdown text-capitalize" @click="open = !open">
                         <span class="username">
-                        {{ userInfo.username }} 
-                        <v-icon small>mdi-menu-down</v-icon></span>
+                            {{ userInfo.username }} 
+                            <v-icon small>mdi-menu-down</v-icon>
+                        </span>
                     </span>
                 </template>
 
